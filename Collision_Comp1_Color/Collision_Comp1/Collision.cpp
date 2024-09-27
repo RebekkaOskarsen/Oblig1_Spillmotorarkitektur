@@ -27,8 +27,8 @@ void Collision::checkWallCollision(glm::vec3& position, glm::vec3& velocity, flo
     }
 }
 // Clamping is to make sure that the ball does not try to go outside
-// the walls and restricts the position between minX + radius and maxX-radius
-// That the ball does not go out of bounds
+// the walls and restricts the position between minX + radius and maxX-radius.
+// That the ball does not go out of bounds.
 
 void Collision::responseBallCollision(glm::vec3& pos1, glm::vec3& pos2, glm::vec3& vel1, glm::vec3& vel2, float radius)
 {
@@ -48,6 +48,6 @@ void Collision::responseBallCollision(glm::vec3& pos1, glm::vec3& pos2, glm::vec
         // Simulates the effect of bouncing off eachother.
     }
 }
-// vel1 and vel2 is the velocity of the two balls
-// Direction calculates the normalized direction vector from ball 2 to ball 1.
-// Overlap calculates how much the two balls are overlapping.
+// vel1 and vel2 is the velocity of the two balls.
+// Direction: calculates the normalized direction vector from ball 2 to ball 1.
+// Overlap: calculates how much the two balls are overlapping.
